@@ -1,0 +1,6 @@
+mlflow==3.5.0
+scikit-learn==1.7.2
+Flask==3.1.2
+prometheus-client==0.23.1
+requests==2.32.5
+SQLAlchemy<2.1

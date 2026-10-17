@@ -17,7 +17,11 @@ MODEL_URI = os.getenv(
     "MODEL_URI", "models:/IrisRandomForest/1"
 )
 
-model = mlflow.pyfunc.load_model(MODEL_URI)
+def load_prediction_model():
+    return mlflow.pyfunc.load_model(MODEL_URI)
+
+
+model = load_prediction_model()
 
 PREDICTIONS = Counter(
     "iris_predictions_total",
